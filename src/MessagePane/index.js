@@ -20,4 +20,12 @@ const MessagePane = ({messages}) => (
   </div>
 );
 
+MessagePane.defaultProps = {
+  messages: []
+};
+
+MessagePane.propTypes = {
+  messages: React.PropTypes.array.isRequired
+};
+
 export default MessagePane;
